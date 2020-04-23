@@ -1,0 +1,14 @@
+﻿<?xml version="1.0"?>
+<doc>
+	<assembly>
+		<name>UnityEngine.WebGLModule</name>
+	</assembly>
+	<members>
+		<member name="T:UnityEngine.WebGLInput">
+			<summary>WebGLInput provides support for WebGL-specific functionalities.</summary>
+		</member>
+		<member name="P:UnityEngine.WebGLInput.captureAllKeyboardInput">
+			<summary>Capture all keyboard inputs.</summary>
+		</member>
+	</members>
+</doc>
