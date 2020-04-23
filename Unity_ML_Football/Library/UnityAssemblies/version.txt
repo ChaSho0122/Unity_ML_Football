@@ -1,16 +1,13 @@
 2019.3.5f1:3.3.0.2
-StandaloneWindows
+WebGL
 C:\Program Files\Unity\Hub\Editor\2019.3.5f1\Editor\Data\Managed/UnityEngine/UnityEngine.dll
 C:\Program Files\Unity\Hub\Editor\2019.3.5f1\Editor\Data\Managed/UnityEngine/UnityEngine.AIModule.dll
-C:\Program Files\Unity\Hub\Editor\2019.3.5f1\Editor\Data\Managed/UnityEngine/UnityEngine.ARModule.dll
 C:\Program Files\Unity\Hub\Editor\2019.3.5f1\Editor\Data\Managed/UnityEngine/UnityEngine.AccessibilityModule.dll
 C:\Program Files\Unity\Hub\Editor\2019.3.5f1\Editor\Data\Managed/UnityEngine/UnityEngine.AndroidJNIModule.dll
 C:\Program Files\Unity\Hub\Editor\2019.3.5f1\Editor\Data\Managed/UnityEngine/UnityEngine.AnimationModule.dll
 C:\Program Files\Unity\Hub\Editor\2019.3.5f1\Editor\Data\Managed/UnityEngine/UnityEngine.AssetBundleModule.dll
 C:\Program Files\Unity\Hub\Editor\2019.3.5f1\Editor\Data\Managed/UnityEngine/UnityEngine.AudioModule.dll
 C:\Program Files\Unity\Hub\Editor\2019.3.5f1\Editor\Data\Managed/UnityEngine/UnityEngine.ClothModule.dll
-C:\Program Files\Unity\Hub\Editor\2019.3.5f1\Editor\Data\Managed/UnityEngine/UnityEngine.ClusterInputModule.dll
-C:\Program Files\Unity\Hub\Editor\2019.3.5f1\Editor\Data\Managed/UnityEngine/UnityEngine.ClusterRendererModule.dll
 C:\Program Files\Unity\Hub\Editor\2019.3.5f1\Editor\Data\Managed/UnityEngine/UnityEngine.CoreModule.dll
 C:\Program Files\Unity\Hub\Editor\2019.3.5f1\Editor\Data\Managed/UnityEngine/UnityEngine.CrashReportingModule.dll
 C:\Program Files\Unity\Hub\Editor\2019.3.5f1\Editor\Data\Managed/UnityEngine/UnityEngine.DSPGraphModule.dll
@@ -58,12 +55,14 @@ C:\Program Files\Unity\Hub\Editor\2019.3.5f1\Editor\Data\Managed/UnityEngine/Uni
 C:\Program Files\Unity\Hub\Editor\2019.3.5f1\Editor\Data\Managed/UnityEngine/UnityEngine.VRModule.dll
 C:\Program Files\Unity\Hub\Editor\2019.3.5f1\Editor\Data\Managed/UnityEngine/UnityEngine.VehiclesModule.dll
 C:\Program Files\Unity\Hub\Editor\2019.3.5f1\Editor\Data\Managed/UnityEngine/UnityEngine.VideoModule.dll
+C:/Program Files/Unity/Hub/Editor/2019.3.5f1/Editor/Data/PlaybackEngines/WebGLSupport/Managed/UnityEngine.WebGLModule.dll
 C:\Program Files\Unity\Hub\Editor\2019.3.5f1\Editor\Data\Managed/UnityEngine/UnityEngine.WindModule.dll
 C:\Program Files\Unity\Hub\Editor\2019.3.5f1\Editor\Data\Managed/UnityEngine/UnityEngine.XRModule.dll
 C:\Program Files\Unity\Hub\Editor\2019.3.5f1\Editor\Data\Managed/UnityEditor.dll
 C:/Program Files/Unity/Hub/Editor/2019.3.5f1/Editor/Data/UnityExtensions/Unity/UnityVR/Editor/UnityEditor.VR.dll
 C:/Program Files/Unity/Hub/Editor/2019.3.5f1/Editor/Data/Managed/UnityEditor.Graphs.dll
 C:/Program Files/Unity/Hub/Editor/2019.3.5f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+C:/Program Files/Unity/Hub/Editor/2019.3.5f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 C:/Program Files/Unity/Hub/Editor/2019.3.5f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
 C:/Program Files (x86)/Microsoft Visual Studio Tools for Unity/15.0/Editor/SyntaxTree.VisualStudio.Unity.Bridge.dll
 D:/Unity/Unity_ML_Football/Unity_ML_Football/Library/PackageCache/com.unity.ext.nunit@1.0.0/net35/unity-custom/nunit.framework.dll
@@ -191,3 +190,6 @@ C:/ml-agents/com.unity.ml-agents/Plugins/System.IO.Abstractions.dll
 C:/ml-agents/com.unity.ml-agents/Plugins/System.IO.Abstractions.TestingHelpers.dll
 C:/ml-agents/com.unity.ml-agents/Plugins/ProtoBuffer/Grpc.Core.dll
 C:/ml-agents/com.unity.ml-agents/Plugins/ProtoBuffer/System.Interactive.Async.dll
+C:\Program Files\Unity\Hub\Editor\2019.3.5f1\Editor\Data\Managed/UnityEngine/UnityEngine.ARModule.dll
+C:\Program Files\Unity\Hub\Editor\2019.3.5f1\Editor\Data\Managed/UnityEngine/UnityEngine.ClusterInputModule.dll
+C:\Program Files\Unity\Hub\Editor\2019.3.5f1\Editor\Data\Managed/UnityEngine/UnityEngine.ClusterRendererModule.dll

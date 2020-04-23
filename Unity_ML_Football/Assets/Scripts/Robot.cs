@@ -2,81 +2,68 @@
 using MLAgents;
 using MLAgents.Sensors;
 
-public class Robot : MonoBehaviour
+public class Robot : Agent
 {
     [Header("速度"), Range(1, 50)]
-    public float soeed = 10;
-    /// <summary>
-    /// 機器人鋼體
-    /// </summary>
+    public float speed = 10;
+
     private Rigidbody rigRobot;
-    /// <summary>
-    /// 足球鋼體
-    /// </summary>
     private Rigidbody rigBall;
 
     private void Start()
     {
-        rigRobot = GetComponent<Rigidboy>();
-        rigBall = GameObject.Find("Soccer Ball").GetComponent<Rigibody>();
+        rigRobot = GetComponent<Rigidbody>();
+        rigBall = GameObject.Find("足球").GetComponent<Rigidbody>();
+    
     }
-
-    public override void OnEpisoeBegin()
+    public override void OnEpisodeBegin()
     {
-        //重設鋼體的加速度與角度加速度
         rigRobot.velocity = Vector3.zero;
-        rigRobot.angularVelocity= Vector3.zero;
+        rigRobot.angularVelocity = Vector3.zero;
         rigBall.velocity = Vector3.zero;
-        rigbBall.angularVelocity = Vector3.zero;
+        rigBall.angularVelocity = Vector3.zero;
 
-        //隨機機器人位置
-        Vector3 posRobot = new Vector3(Random.Range(-2f, 2F), 0.1f, Random.Range(-2f, 0f));
+        Vector3 posRobot = new Vector3(Random.Range(-2f, 2f), 0.1f, Random.Range(-2f, 0f));
         transform.position = posRobot;
-        
-        //隨機足球位置
-        Vector3 posBall = new Vector3(Random.Range(-2f, 2F), 0.1f, Random.Range(1f, 2f));
-        rigBall.position = posBall;
 
-        //足球尚未進入球門
+        Vector3 posBall = new Vector3(Random.Range(-2f, 2f), 0.1f, Random.Range(1f, 2f));
+        transform.position = posBall;
+
         Ball.complete = false;
     }
-
-    public override void CollectObservations(VectorSenor senor)
+    public override void CollectObservations(VectorSensor sensor)
     {
-        //加入觀測資料:機器人、足球座標、機器人加速度X、Z
-        senor.AddObservation(transform.position);
-        senor.AddObservation(rigball.position);
-        senor.AddObservation(rigRobot.velocity.x);
-        senor.AddObservation(rigRobot.velocity.y);
-    }
+        sensor.AddObservation(transform.position);
+        sensor.AddObservation(rigBall.position);
+        sensor.AddObservation(rigRobot.velocity.x);
+        sensor.AddObservation(rigRobot.velocity.z);
 
-    /// <summary>
-    ///動作:控制機器人與回饋
-    /// </summary>
-    /// <param name="vectorAction"></param>
+    }
     public override void OnActionReceived(float[] vectorAction)
     {
-        //使用參數控制機器人
         Vector3 control = Vector3.zero;
         control.x = vectorAction[0];
         control.z = vectorAction[1];
         rigRobot.AddForce(control * speed);
 
-        //球進入球門，成功:加一分並結束
         if (Ball.complete)
         {
             SetReward(1);
-            EndEpisode();
+            EndEpisode(); 
         }
-
-        //機器人或足球掉到地板下方，失敗:扣1分並結束
         if (transform.position.y<0 || rigBall.position.y<0)
         {
             SetReward(-1);
             EndEpisode();
         }
-
     }
+    public override float[] Heuristic()
+    {
+        var action = new float[2];
+        action[0] = Input.GetAxis("Horizontal");
+        action[1] = Input.GetAxis("Vertical");
 
+        return action;
+    }
 
 }
